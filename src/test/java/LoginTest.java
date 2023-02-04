@@ -25,8 +25,12 @@ public class LoginTest {
 		driver.get("https://www.gmail.com");
 		
 		driver.findElement(By.name("identifier")).sendKeys("ansh.sds@gmail.com");
+		
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
+		
+		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("Hello@");
 		Thread.sleep(3000);
+		
 	}
 	@AfterSuite
 	public void tearDown() {
