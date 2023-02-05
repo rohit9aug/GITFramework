@@ -30,14 +30,16 @@ public class LoginTest {
 		
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
 		
-		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("Hello@");
+		Thread.sleep(5000);
+		
+		//driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("Hello@");
 		Thread.sleep(3000);
 		
 	}
 	@AfterSuite
 	public void tearDown() {
 		driver.close();
-		//
+		//			
 	}
 
 }
